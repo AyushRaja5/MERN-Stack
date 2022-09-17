@@ -1,0 +1,38 @@
+.body{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+.body-write{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 4%;
+    text-align: center;
+    position: relative;
+    text-shadow: 5px 4px 10px rgba(51, 49, 49, 0.5);
+}
+.body-image{
+    height: 70%;
+    width: 50vw;
+    
+}
+.about{
+    display: flex;
+    justify-content: center;
+}
+.about-image{
+    height: 70%;
+    width: 50vw;
+    
+}
+.about-write{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 4%;
+  
+    text-shadow: 5px 4px 10px rgba(51, 49, 49, 0.5);
+
+}
