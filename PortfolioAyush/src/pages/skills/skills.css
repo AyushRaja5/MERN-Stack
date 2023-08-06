@@ -1,0 +1,168 @@
+.skills{
+    max-width: 1000px;
+}
+.section_title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.skills_container{
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 50px;
+    justify-items: center;
+}
+
+.progress_circle{
+    width: 150px !important;
+    height: 150px !important;
+    /* background-color: aqua; */
+}
+
+.CircularProgressbar-path{
+    stroke: var(--first-color) !important;
+    stroke-linecap: 'butt' !important;
+}
+
+.CircularProgressbar-trail{
+    stroke: var(--border-color) !important;
+}
+.CircularProgressbar-text{
+   fill: var(--title-color) !important;
+   font-family: var(--secondary-font);
+   font-size: var(--large-font-size);
+   transform: translateY(15%);
+}
+
+.progress_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    position: relative; /* Add this for positioning the tooltip */
+  }
+  
+  .progress_circle {
+    position: relative;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+  }
+  
+  .progress_inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .progress_logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--first-color);
+    transform: translate(-35%, -60%);
+    z-index: 1;
+  }
+  
+  .skills_title {
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0; /* Start with hidden title */
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.3s;
+    position: absolute;
+    top: -30%; /* Position above the progress bar */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    background-color: var(--title-color);
+    color: var(--body-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-family: var(--body-font);
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-700);
+  }
+  
+  .progress_box:hover .skills_title {
+    opacity: 1; /* Show title on hover */
+    visibility: visible;
+  }
+  
+
+
+
+.seperator{
+  border-top: 2px solid var(--border-color);
+  max-width: 60%;
+}
+
+.scorecards{
+  width: 100%;
+  height: 250px;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 20px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.card{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 20px 20px;
+  background-color: aqua;
+}
+.card:hover{
+  transition: all 0.4s ease-in;
+  scale: 1.1;
+}
+
+.scorecard{
+  width: 250px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--border-color);
+}
+
+.cardlogo{
+  margin: 10px 0;
+  height: 100px;
+  width: 100px;
+}
+
+.cardlogo img{
+  border-radius: 50%;
+}
+.title{
+  width: 100%;
+  height: 30px;
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--weight-500);
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+.scorediv{
+  display: flex;
+  align-items: end;
+}
+.stats_no{
+  margin-top: 25px;
+  font-family: var(--secondary-font);
+  font-size: var(--h2-font-size);
+  font-weight: var(--weight-700);
+}
+.score{
+  font-size: var(--h2-font-size);
+  display: flex;
+  justify-content: end;
+}
